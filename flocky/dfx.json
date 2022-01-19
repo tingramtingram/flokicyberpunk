@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "flocky": {
+      "main": "src/flocky/main.mo",
+      "type": "motoko"
+    },
+    "flocky_assets": {
+      "dependencies": [
+        "flocky"
+      ],
+      "frontend": {
+        "entrypoint": "src/flocky_assets/src/index.html"
+      },
+      "source": [
+        "src/flocky_assets/assets",
+        "dist/flocky_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.8.4",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}

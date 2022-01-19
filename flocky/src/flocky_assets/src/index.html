@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+	<title>FlokiCyberPunk - Game</title>
+	<link rel="icon" href="/favicon.ico">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <span class="logo nav-link">
+					<img src="images/logo.svg" alt="">
+				</span>
+
+        <button class="header__blockchain btn-clear modal-trigger">
+					<!-- <div class="blockchains modal">
+						<p class="blockchains__title">
+							Choosing a Blockchain
+						</p>
+						<ul class="blockchains__items">
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="bsc"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-bsc.png" alt="">
+									</span>
+									<span class="label-text">
+										BSC
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="polygon"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-polygon.svg" alt="">
+									</span>
+									<span class="label-text">
+										Polygon
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="ethereum"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-ethereum.svg" alt="">
+									</span>
+									<span class="label-text">
+										Ethereum
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="avalanche"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-avalanche.svg" alt="">
+									</span>
+									<span class="label-text">
+										Avalanche
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="moonriver"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-moonriver.svg" alt="">
+									</span>
+									<span class="label-text">
+										Moonriver
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="immutablex"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-immux.svg" alt="">
+									</span>
+									<span class="label-text">
+										Immutable X
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="near"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-near.svg" alt="">
+									</span>
+									<span class="label-text">
+										Near
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="solana"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-solana.svg" alt="">
+									</span>
+									<span class="label-text">
+										Solana
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="dfinity"
+									name='blockchains'
+									checked
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-dfinity.png" alt="">
+									</span>
+									<span class="label-text">
+										Dfinity
+									</span>
+								</label>
+							</li>
+							<li class="blockchains__item">
+								<label class="label">
+									<input class='checkbox' type='radio'
+									value="flow"
+									name='blockchains'
+									disabled
+									>
+									<span class="blockchains__imgwrapper">
+										<img src="images/blockchain-flow.svg" alt="">
+									</span>
+									<span class="label-text">
+										Flow
+									</span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="modal-pad"></div> -->
+          <div class="header__blockchain-icon">
+            <img src="images/blockchain-dfinity.png" alt="">
+          </div>
+          <span class="header__blockchain-name">
+            Dfinity
+          </span>
+          <div class="header__blockchain-arrow">
+            <img src="images/arrow.svg" alt="">
+          </div>
+        </button>
+
+        <button class="header__wallets btn-clear modal-trigger">
+          <span class="header__wallets-principal">
+            Your Principal ID
+          </span>
+          <span class="header__wallets-dfinity-imgwrapper">
+            <img src="images/plug-dark.svg" alt="">
+          </span>
+          <span class="header__wallets-dfinity-text">
+            Connect to Plug
+          </span>
+          <span class="header__wallets-imgwrapper">
+           <img src="images/copy.svg" alt="">
+          </span>
+  				<div class="wallets modal">
+						<span class='btn btn--green'>
+							Copied
+						</span>
+  				</div>
+  				<div class="modal-pad"></div>
+        </button>
+
+        <button class="header__profile btn-clear modal-trigger">
+					<img class="header__profile-img" src="images/user.svg" alt="">
+          <div class="profile modal">
+  				  <p class="profile__title">
+  				    Your Profile Settings
+  				  </p>
+  				  <span class="profile__form">
+							<label class="upload">
+								<span class="profile__imgwrapper-uploaded">
+  				        <img src="" alt="">
+  				      </span>
+  				      <span class="profile__imgwrapper">
+  				        <img class="profile__imgwrapper--delete" src="images/trash.svg" alt="">
+  				        <img class="profile__imgwrapper--add" src="images/add.svg" alt="">
+  				      </span>
+  				      <p class="profile__sizes">
+  				        512x512
+  				      </p>
+  				      <p class="profile__file-types">
+  				        png, jpg
+  				      </p>
+								<input type="file">
+							</label>
+							<label class="label">
+  						  <p class="label-text">
+  						    Your username:
+  						  </p>
+  						  <input class='input' 
+  						  placeholder="FlokiCyberPunk"
+  						  >
+  						</label>
+  				  </span>
+						<span class="btn btn--out hidden">
+							Log Out
+						</span>
+						<span class="btn">
+							Save Settings
+						</span>
+  				</div>
+  				<div class="modal-pad"></div>
+        </button>
+
+        <button class="header__menu-btn header__menu-btn--not-main btn-clear">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+      </div>
+    </div>
+    <div class="header__menu header__menu--not-main">
+			<button class="header__blockchain btn-clear modal-trigger">
+				<!-- <div class="blockchains modal">
+					<p class="blockchains__title">
+						Choosing a Blockchain
+					</p>
+					<ul class="blockchains__items">
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="bsc"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-bsc.png" alt="">
+								</span>
+								<span class="label-text">
+									BSC
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="polygon"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-polygon.svg" alt="">
+								</span>
+								<span class="label-text">
+									Polygon
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="ethereum"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-ethereum.svg" alt="">
+								</span>
+								<span class="label-text">
+									Ethereum
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="avalanche"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-avalanche.svg" alt="">
+								</span>
+								<span class="label-text">
+									Avalanche
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="moonriver"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-moonriver.svg" alt="">
+								</span>
+								<span class="label-text">
+									Moonriver
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="immutablex"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-immux.svg" alt="">
+								</span>
+								<span class="label-text">
+									Immutable X
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="near"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-near.svg" alt="">
+								</span>
+								<span class="label-text">
+									Near
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="solana"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-solana.svg" alt="">
+								</span>
+								<span class="label-text">
+									Solana
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="dfinity"
+								name='blockchains-mobile'
+								checked
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-dfinity.png" alt="">
+								</span>
+								<span class="label-text">
+									Dfinity
+								</span>
+							</label>
+						</li>
+						<li class="blockchains__item">
+							<label class="label">
+								<input class='checkbox' type='radio'
+								value="flow"
+								name='blockchains-mobile'
+								disabled
+								>
+								<span class="blockchains__imgwrapper">
+									<img src="images/blockchain-flow.svg" alt="">
+								</span>
+								<span class="label-text">
+									Flow
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div class="modal-pad"></div> -->
+				<div class="header__blockchain-icon">
+					<img src="images/blockchain-dfinity.png" alt="">
+				</div>
+				<span class="header__blockchain-name">
+					Dfinity
+				</span>
+				<div class="header__blockchain-arrow">
+					<img src="images/arrow.svg" alt="">
+				</div>
+			</button>
+
+			<button class="header__wallets btn-clear modal-trigger">
+				<span class="header__wallets-principal">
+					Your Principal ID
+				</span>
+				<span class="header__wallets-dfinity-imgwrapper">
+					<img src="images/plug-dark.svg" alt="">
+				</span>
+				<span class="header__wallets-dfinity-text">
+					Connect to Plug
+				</span>
+				<span class="header__wallets-imgwrapper">
+				 <img src="images/copy.svg" alt="">
+				</span>
+				<div class="wallets modal">
+					<span class='btn btn--green'>
+						Copied
+					</span>
+				</div>
+				<div class="modal-pad"></div>
+			</button>
+
+			<button class="header__profile btn-clear modal-trigger">
+				<img class="header__profile-img" src="images/user.svg" alt="">
+				<div class="profile modal">
+					<p class="profile__title">
+						Your Profile Settings
+					</p>
+					<span class="profile__form">
+						<label class="upload">
+							<span class="profile__imgwrapper-uploaded">
+								<img src="" alt="">
+							</span>
+							<span class="profile__imgwrapper">
+								<img class="profile__imgwrapper--delete" src="images/trash.svg" alt="">
+								<img class="profile__imgwrapper--add" src="images/add.svg" alt="">
+							</span>
+							<p class="profile__sizes">
+								512x512
+							</p>
+							<p class="profile__file-types">
+								png, jpg
+							</p>
+							<input type="file">
+						</label>
+						<label class="label">
+							<p class="label-text">
+								Your username:
+							</p>
+							<input class='input' 
+							placeholder="FlokiCyberPunk"
+							>
+						</label>
+					</span>
+					<span class="btn btn--out hidden">
+						Log Out
+					</span>
+					<span class="btn">
+						Save Settings
+					</span>
+				</div>
+				<div class="modal-pad"></div>
+			</button>
+    </div>
+  </header>
+
+	<section class="game">
+    <div class="game__videowrapper">
+      <video
+  		  id="my-video"
+  		  class="video-js"
+  		  preload="auto"
+  		  poster="images/temp/video-cover.jpg"
+  		  data-setup="{}"
+				autoplay
+				muted
+				loop
+				playsinline
+  		>
+  		  <source src="videos/ex-1.mp4" type="video/mp4" />
+  		  <p class="vjs-no-js">
+  		    To view this video please enable JavaScript, and consider upgrading to a
+  		    web browser that
+  		    <a href="https://videojs.com/html5-video-support/" target="_blank"
+  		      >supports HTML5 video</a
+  		    >
+  		  </p>
+  		</video>
+    </div>
+    <div class="game__wrapper">
+      <div class="container">
+        <div class="game__inner">
+          <div class="game__imgwrapper">
+            <img src="images/floki-graphic.png" alt="">
+          </div>
+          <h1 class="game__title title">
+            COMING SOON
+          </h1>
+					<button class="btn btn--dfinity btn--big">
+						<img src="images/plug-dark.svg" alt="">
+						Connect to Plug
+					</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<div class="loader">
+		<img src="images/loader-pic.svg" alt="">
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<span class="logo nav-link" target="_blank">
+					<img src="images/logo.svg" alt="">
+				</span>
+				<p class="footer__copyright">
+					© 2021 FlokiCyberpunk. All rights reserved.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
